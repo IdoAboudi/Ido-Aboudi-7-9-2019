@@ -1,0 +1,23 @@
+.list {
+  background: ghostwhite;
+  box-shadow: 0 0 1px;
+  position: absolute;
+  top: 100px;
+  left: 180px;
+  width: 200px;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.list > ul > li:hover {
+  text-decoration: underline;
+}
+
+.list li {
+  list-style-type: none;
+}
+
+.hidden {
+  display: none;
+}

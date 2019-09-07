@@ -1,0 +1,10 @@
+.favorite {
+  display: flex;
+  justify-content: center;
+  margin: 5% 30%;
+  flex-wrap: wrap;
+}
+
+.favorite > div {
+  margin-inline-end: 30px;
+}
