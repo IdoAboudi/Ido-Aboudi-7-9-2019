@@ -8,7 +8,6 @@ class HomePage extends React.Component {
 
   componentDidMount() {
     const { params: {name, cityKey}} = this.props.match;
-    console.log(cityKey, name);
     if(cityKey !== undefined && name !== undefined){
       this.onTermSubmit(cityKey, name);
     } 
@@ -29,7 +28,6 @@ class HomePage extends React.Component {
         }
       );
       this.setState({ forecast: response.data.DailyForecasts });
-      console.log(response.data.DailyForecasts);
     } catch (error) {
       this.setState({ error: error });
     }

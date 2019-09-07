@@ -17,8 +17,6 @@ class FavoritesItem extends React.Component {
         }
       }
     );
-    console.log(response.data[0]);
-    console.log(response.data[0].Temperature.Metric.Value);
     this.setState({
       currentWeather: response.data[0],
       temp: response.data[0].Temperature.Metric.Value
